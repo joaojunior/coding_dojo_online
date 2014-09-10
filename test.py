@@ -2,9 +2,13 @@
 #Resolvendo o problema do Ano Bissexto - http://dojopuzzles.com/problemas/exibe/ano-bissexto/
 
 import unittest
+
+def bissexto(ano):
+    return True
+
 class TestAnoBissexto(unittest.TestCase):
     def test_passa_multiplo_4(self):
-        self.assertTrue(bissexto(400))
+        self.assertTrue(bissexto(1732))
         
 if __name__ == "__main__":
     unittest.main()
